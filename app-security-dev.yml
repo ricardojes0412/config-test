@@ -1,0 +1,16 @@
+  datasource:
+    driver-class-name: com.microsoft.sqlserver.jdbc.SQLServerDriver
+    url: jdbc:sqlserver://localhost:1433;databaseName=db_seguridad
+    username: sa
+    password: 1a.2b.3c.
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: create
+    properties:
+      hibernate:
+        format_sql: true
+        dialect: org.hibernate.dialect.SQLServer2012Dialect
+logging:
+  level:
+    org.hibernate.SQL: debug

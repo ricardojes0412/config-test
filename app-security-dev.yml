@@ -1,3 +1,6 @@
+ spring:
+  application:
+    name: app-security
   datasource:
     driver-class-name: com.microsoft.sqlserver.jdbc.SQLServerDriver
     url: jdbc:sqlserver://localhost:1433;databaseName=db_seguridad

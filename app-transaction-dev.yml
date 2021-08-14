@@ -1,17 +1,10 @@
 spring:
-  datasource:
-    driver-class-name: com.microsoft.sqlserver.jdbc.SQLServerDriver
-    url: jdbc:sqlserver://localhost:1433;databaseName=db_seguridad
-    username: sa
-    password: 1a.2b.3c.
-  jpa:
-    show-sql: true
-    hibernate:
-      ddl-auto: create
-    properties:
-      hibernate:
-        format_sql: true
-        dialect: org.hibernate.dialect.SQLServer2012Dialect
-logging:
-  level:
-    org.hibernate.SQL: debug
+  data:
+    mongodb:
+      uri: mongodb://localhost:27018/db_transaction
+  kafka:
+    consumer:
+      bootstrap-servers: localhost:9092
+      key-deserializer: org.apache.kafka.common.serialization.IntegerDeserializer
+      value-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+      group-id: operation-events-transaction

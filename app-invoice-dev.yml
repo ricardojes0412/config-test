@@ -1,14 +1,15 @@
 spring:
   kafka:
     consumer:
-      bootstrap-servers: localhost:9092
+      #bootstrap-servers: localhost:9092
+      bootstrap-servers: servicekafka:9092
       key-deserializer: org.apache.kafka.common.serialization.IntegerDeserializer
       value-deserializer: org.apache.kafka.common.serialization.StringDeserializer
       group-id: operations-events-invoice
   datasource:
     driver-class-name: org.postgresql.Driver
     #url: jdbc:postgresql://localhost:5434/db_invoice
-    url: jdbc:postgresql://microservicio-postgres12/db_invoice
+    url: jdbc:postgresql://microservicio-postgres12:5432/db_invoice
     username: postgres
     password: 123456
   jpa:

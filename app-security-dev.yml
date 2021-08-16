@@ -2,7 +2,7 @@ spring:
   datasource:
     driver-class-name: com.microsoft.sqlserver.jdbc.SQLServerDriver
     #url: jdbc:sqlserver://localhost:1433;databaseName=db_seguridad
-    url: jdbc:sqlserver://sqlservice;databaseName=db_seguridad
+    url: jdbc:sqlserver://sqlservice:1433;databaseName=db_seguridad
     username: sa
     password: 1a.2b.3c.
   jpa:

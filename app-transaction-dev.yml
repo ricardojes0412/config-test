@@ -1,7 +1,8 @@
 spring:
   data:
     mongodb:
-      uri: mongodb://localhost:27018/db_transaction
+      #uri: mongodb://localhost:27018/db_transaction
+      uri: mongodb://mongodb/db_transaction
   kafka:
     consumer:
       bootstrap-servers: localhost:9092

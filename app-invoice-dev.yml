@@ -7,7 +7,8 @@ spring:
       group-id: operations-events-invoice
   datasource:
     driver-class-name: org.postgresql.Driver
-    url: jdbc:postgresql://localhost:5434/db_invoice
+    #url: jdbc:postgresql://localhost:5434/db_invoice
+    url: jdbc:postgresql://microservicio-postgres12/db_invoice
     username: postgres
     password: 123456
   jpa:

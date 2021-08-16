@@ -4,16 +4,20 @@ zuul:
       service-id: app-pay
       path: /api/pay/**
       #url: http://localhost:7006/
+      url: http://app-pay:7006/
     security:
       service-id: app-security
       path: /api/security/**
       #url: http://localhost:7010/
+      url: http://app-security:7010/
       sensitiveHeaders: Cookie,Set-Cookie
     invoice:
       service-id: app-invoice
       path: /api/invoice/**
       #url: http://localhost:7081/
+      url: http://app-invoice:7081/
     transaction:
       service-id: app-transaction
       path: /api/transaction/**
       #url: http://localhost:7082/
+      url: http://app-transaction:7082/

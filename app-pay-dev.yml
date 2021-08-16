@@ -2,8 +2,8 @@ spring:
   kafka:
     producer:
       bootstrap-servers: localhost:9092
-      key-serializer: org.apache.kafka.common.serialization.IntegerDeserializer
-      value-serializer: org.apache.kafka.common.serialization.StringDeserializer
+      key-serializer: org.apache.kafka.common.serialization.IntegerSerializer
+      value-serializer: org.apache.kafka.common.serialization.StringSerializer
     template:
       default-topic: operations-events
     admin:
